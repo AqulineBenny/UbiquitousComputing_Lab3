@@ -9,9 +9,9 @@ public class MotionDetailActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_motion_detail);
         TextView tvDetails = findViewById(R.id.tvDetails);
-        String time = getIntent().getStringExtra("Time");
+        String time = getIntent().getStringExtra("time");
         if (time != null){
-            tvDetails.SetText("The phone was moved at:\n" + time);
+            tvDetails.setText("The phone was moved at:\n" + time);
         } else{
             tvDetails.setText("No motion info found.");
         }
